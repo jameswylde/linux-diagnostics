@@ -18,25 +18,25 @@ if ! command -v iostat &>/dev/null; then
 fi
 iostat_file="$diagnostics_dir/iostat-$(date '+%m%d%H%M%S')-$(date '+%Z')-$(hostname).log"
 echo -e "\e[96m[3/8]\e[33m - Collecting iostat: $iostat_file\n"
-iostat -dxmyt 1 30 >"$iostat_file" &
+iostat -dxmyt 1 300 >"$iostat_file" &
 wait %1
 
 # Run sar 300s
 sar_file="$diagnostics_dir/sar-$(date '+%m%d%H%M%S')-$(date '+%Z')-$(hostname).log"
 echo -e "\e[96m[4/8]\e[33m - Collecting sar: $sar_file\n"
-sar -A 1 30 >"$sar_file" &
+sar -A 1 300 >"$sar_file" &
 wait %1
 
 # Run top (CPU) 300s
 top_cpu_file="$diagnostics_dir/top-cpu-$(date '+%m%d%H%M%S')-$(date '+%Z')-$(hostname).log"
 echo -e "\e[96m[5/8]\e[33m - Collecting top CPU utilisation: $top_cpu_file\n"
-top -b -d 1 -n 30 -o +%CPU | grep -A 15 average >"$top_cpu_file" &
+top -b -d 1 -n 300 -o +%CPU | grep -A 15 average >"$top_cpu_file" &
 wait %1
 
 # Run top (memory) 300s
 top_mem_file="$diagnostics_dir/top-mem-$(date '+%m%d%H%M%S')-$(date '+%Z')-$(hostname).log"
 echo -e "\e[96m[6/8]\e[33m - Collecting top memory utilisation: $top_mem_file\n"
-top -b -d 1 -n 30 -o +%MEM | grep -A 15 average >"$top_mem_file" &
+top -b -d 1 -n 300 -o +%MEM | grep -A 15 average >"$top_mem_file" &
 wait %1
 
 # Grab system info
