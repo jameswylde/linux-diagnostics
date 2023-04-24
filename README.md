@@ -9,3 +9,8 @@ Collects:
 - iostat over 5min
 - sar over 5min
 - top for CPU and mem over 5min
+
+Example:
+
+![screen](https://imgur.com/QUbHWKE.png)
+
