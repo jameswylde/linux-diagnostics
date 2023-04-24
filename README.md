@@ -1,7 +1,7 @@
 # linux-vm-diagnostics
 Simple bash script to pull some diagnostic information from Linux VMs for troubleshooting and compress for sharing - optionally uploads to workspace with `azcopy`.
 
-![screen](https://imgur.com/QUbHWKE.png)
+![screen](https://imgur.com/kPfTVKD.png)
 
 - Curl, verify the script contents and run:
 ```
