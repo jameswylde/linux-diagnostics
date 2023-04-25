@@ -4,15 +4,16 @@ Bash script to pull some diagnostic information from Linux VMs for troubleshooti
 ![screen](https://imgur.com/kPfTVKD.png)
 
 ### Usage 
+
 - Curl, verify the script contents and run:
 ```
 curl https://raw.githubusercontent.com/jameswylde/linux-vm-diagnostics/main/diag.sh > diag.sh
 sudo bash diag.sh
 ```
 
-_or_
 
-- YOLO 
+
+- _or_ YOLO 
 ```
 sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/jameswylde/linux-vm-diagnostics/main/diag.sh)"
 ```
