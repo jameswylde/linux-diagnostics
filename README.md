@@ -1,5 +1,5 @@
 ## linux-vm-diagnostics
-Simple bash script to pull some diagnostic information from Linux VMs for troubleshooting and compress for sharing - optionally uploads to workspace with `azcopy`.
+Bash script to pull some diagnostic information from Linux VMs for troubleshooting and compress for sharing - optionally uploads to workspace with `azcopy`.
 
 ![screen](https://imgur.com/kPfTVKD.png)
 
