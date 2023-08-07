@@ -13,7 +13,7 @@ sudo bash diag.sh
 
 
 
-- _or_ YOLO 
+- _or_ if you've verified the contents of the script and are happy to proceed: 
 ```
 sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/jameswylde/linux-vm-diagnostics/main/diag.sh)"
 ```
